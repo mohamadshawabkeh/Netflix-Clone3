@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import Movie from "./Movie";
+// import Movie from "./Movie";
 import { useState } from "react";
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
