@@ -19,12 +19,14 @@ function Home(){
     }
     const addFavMovie= async (item)=>{
     const serverURL = `${process.env.REACT_APP_SERVER_URL}trending`;
+    console.log(serverURL);
         const obj ={
             posterPath:item.poster_path,
             title:item.title,
             overview:item.overview
         }
         const result = await axios.post(`${process.env.REACT_APP_SERVER_URL}getmovies`,obj);
+        console.log(result);
 
     }
     useEffect(()=>{
